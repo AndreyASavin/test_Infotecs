@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Savin_Infotecs.css">
+    <title>Savin Infotecs table</title>
+</head>
+<body>
+    <div id="hide_columns">
+        <div class="hide" data-div="firstName" data-show="show" data-name='имя'></div>
+        <div class="hide" data-div="lastName" data-show="show" data-name='фамилию'></div>
+        <div class="hide" data-div="about" data-show="show" data-name='описание'></div>
+        <div class="hide" data-div="eyeColor" data-show="show" data-name='цвет'></div>
+    </div>
+    <div id="main_container">
+        <div id="table_container">
+            <table id="table">
+                <th data-header='firstName' data-hide='show' data-name='Имя'>
+                    <div class="th_container">
+                        <div>Имя</div>
+                        <button class='arrow' 
+                        data-th='firstName' 
+                        data-sort='unsorted'></button>
+                    </div>
+                </th>
+                <th data-header='lastName' data-hide='show' data-name='Фамилию'>
+                    <div class="th_container">
+                        <div>Фамилия</div>
+                        <button class='arrow' 
+                        data-th='lastName' 
+                        data-sort='unsorted'></button>
+                    </div>
+                </th>
+                <th data-header='about' data-hide='show'>
+                    <div class="th_container">
+                        <div>Описание</div>
+                        <button class='arrow' 
+                        data-th='about' 
+                        data-sort='unsorted'></button>
+                    </div>
+                </th>
+                <th data-header='eyeColor' data-hide='show'>
+                    <div class="th_container">
+                        <div>Цвет глаз</div>
+                        <button class='arrow' 
+                        data-th='eyeColor' 
+                        data-sort='unsorted'></button>
+                    </div>
+                </th>
+                <tbody id="table_body"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="modal_background">
+        <div id="modal_container">
+            <div id="modal_input"></div>
+            <div id="modal_button"></div>
+        </div>
+    </div>
+    <div id="pages"></div>
+
+    <script src="Savin_Infotecs.js"></script>
+</body>
+</html>
